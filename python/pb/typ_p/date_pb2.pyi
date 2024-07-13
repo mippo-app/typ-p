@@ -4,8 +4,8 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 
 DESCRIPTOR: _descriptor.FileDescriptor
 
-class date(_message.Message):
-    __slots__ = ["value"]
+class Date(_message.Message):
+    __slots__ = ("value",)
     VALUE_FIELD_NUMBER: _ClassVar[int]
     value: int
     def __init__(self, value: _Optional[int] = ...) -> None: ...

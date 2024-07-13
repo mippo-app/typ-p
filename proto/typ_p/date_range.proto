@@ -6,6 +6,6 @@ option go_package = "gitlab.com/mippo.app/typ-p.git/go/pb/typ_p";
 import "typ_p/date.proto";
 
 message date_range {
-  date date_from = 1;
-  date date_to = 2;
+  Date date_from = 1;
+  Date date_to = 2;
 }

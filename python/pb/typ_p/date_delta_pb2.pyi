@@ -5,7 +5,7 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class date_delta(_message.Message):
-    __slots__ = ["year", "month", "week", "day"]
+    __slots__ = ("year", "month", "week", "day")
     YEAR_FIELD_NUMBER: _ClassVar[int]
     MONTH_FIELD_NUMBER: _ClassVar[int]
     WEEK_FIELD_NUMBER: _ClassVar[int]

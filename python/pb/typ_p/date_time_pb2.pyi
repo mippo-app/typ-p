@@ -5,7 +5,7 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class date_time(_message.Message):
-    __slots__ = ["year", "month", "day", "hour", "minute", "second"]
+    __slots__ = ("year", "month", "day", "hour", "minute", "second")
     YEAR_FIELD_NUMBER: _ClassVar[int]
     MONTH_FIELD_NUMBER: _ClassVar[int]
     DAY_FIELD_NUMBER: _ClassVar[int]
