@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package typ_p;
+option go_package = "gitlab.com/mippo.app/typ-p.git/go/pb/typ_p";
+
+import "typ_p/date_delta.proto";
+import "typ_p/date_range.proto";
+import "typ_p/date_time.proto";
+import "typ_p/date.proto";
+import "typ_p/number.proto";
+import "typ_p/uuid.proto";
+
+
+message value {
+  oneof value_of {
+    bool bool_value = 1;
+    string string_value = 2;
+    //byte
+    bytes bytes_value = 3;
+    //uuid
+    uuid uuid_value = 4;
+    
+    number number_value = 5;
+
+    date_time date_time_value = 8;
+
+    date date_value = 9;
+    date_range date_range_value = 10;
+    
+    array_value array_values = 11;
+  }
+}
+
+message array_value {
+  repeated value values = 1;
+}
+
+
+
+enum ValueType {
+  VALUE_TYPE_UNKNOWN = 0;
+  VALUE_TYPE_BOOL = 1;
+  VALUE_TYPE_STRING = 2;
+  VALUE_TYPE_BYTES = 3;
+  VALUE_TYPE_UUID = 4;
+  VALUE_TYPE_NUMBER = 5;
+  VALUE_TYPE_DATETIME = 6;
+  VALUE_TYPE_DATE = 7;
+  VALUE_TYPE_DATE_RANGE = 8;
+  VALUE_TYPE_ARRAY_VALUES = 10;
+}

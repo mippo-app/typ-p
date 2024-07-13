@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package typ_p;
+option go_package = "gitlab.com/mippo.app/typ-p.git/go/pb/typ_p";
+
+message date { // 22bit // 13 + 4 + 5
+  fixed32 value = 1;
+}

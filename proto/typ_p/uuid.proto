@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package typ_p;
+option go_package = "gitlab.com/mippo.app/typ-p.git/go/pb/typ_p";
+
+message uuid {
+  bytes uuid_value = 1;
+}

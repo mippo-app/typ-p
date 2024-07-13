@@ -1,0 +1,36 @@
+version: v1
+# managed:
+#   enabled: true
+#   go_package_prefix:
+#     default: gitlab.com/mippo.app/typ-p.git/go
+#     except:
+#       - buf.build/googleapis/googleapis
+plugins:
+# - plugin: buf.build/protocolbuffers/cpp
+#   out: cpp/pb/
+# - plugin: buf.build/protocolbuffers/csharp
+#   out: csharp/pb/
+- plugin: buf.build/protocolbuffers/dart
+  out: dart/lib/pb/
+  opt:
+  - grpc
+- plugin: buf.build/protocolbuffers/go
+  out: go/pb/
+  opt: paths=source_relative
+# - plugin: buf.build/protocolbuffers/java
+#   out: java/pb/
+# - plugin: buf.build/protocolbuffers/js
+#   out: js/pb/
+# - plugin: buf.build/protocolbuffers/kotlin
+#   out: kotlin/pb/
+# - plugin: buf.build/protocolbuffers/objc
+#   out: objc/pb/
+# - plugin: buf.build/protocolbuffers/php
+#   out: php/pb/
+- plugin: buf.build/protocolbuffers/python
+  out: python/pb/
+- plugin: buf.build/protocolbuffers/pyi
+  out: python/pb/
+# - plugin: buf.build/protocolbuffers/ruby
+#   out: ruby/pb/
+# buf generate

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package typ_p;
+option go_package = "gitlab.com/mippo.app/typ-p.git/go/pb/typ_p";
+
+message date_delta {
+  int32 year = 1;
+  int32 month = 2;
+  int32 week = 3;
+  int32 day = 4;
+}
