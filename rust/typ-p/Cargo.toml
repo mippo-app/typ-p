@@ -25,8 +25,10 @@ prost = "~0"
 prost-types = "~0"
 
 
-derive_pb = { git = "https://github.com/mippo-app/derive_pb.git", branch = "main" }
-helper = { git = "https://github.com/mippo-app/helper.git", branch = "main" }
+# derive_pb = { git = "https://github.com/mippo-app/derive_pb.git", branch = "main" }
+# m-helper = { git = "https://github.com/mippo-app/helper.git", branch = "main" }
+m-helper = "~0"
+derive_pb = "~0"
 
 uuid = {version = "1", features = ["serde", "v4"]}
 
@@ -38,3 +40,4 @@ gcloud-sdk = { version = "~0", features = ["google-firestore-v1"] }
 
 [build-dependencies]
 tonic-build = "~0"
+m-helper = "~0"
