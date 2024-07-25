@@ -3,7 +3,7 @@ name = "typ-p"
 version = "0.0.1"
 edition = "2021"
 
-build = "build.rs"
+# build = "build.rs"
 
 description = "typ is difine primitive type proto files."
 license = "MIT OR Apache-2.0"
