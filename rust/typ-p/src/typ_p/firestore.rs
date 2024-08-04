@@ -1,10 +1,10 @@
 use std::collections::HashMap;
 
-use gcloud_sdk::google::firestore::v1::{MapValue, Value as f_Value};
+use rpc_gcp::pb::google::firestore::v1::{MapValue, Value as f_Value};
 
-use gcloud_sdk::google::firestore::v1::value::ValueType;
+use rpc_gcp::pb::google::firestore::v1::value::ValueType;
 
-use gcloud_sdk::google::firestore::v1::structured_query::field_filter::Operator as f_Operator;
+use rpc_gcp::pb::google::firestore::v1::structured_query::field_filter::Operator as f_Operator;
 
 use super::operator::Operator;
 use super::value_of::ValueOf;

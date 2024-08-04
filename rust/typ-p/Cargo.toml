@@ -36,7 +36,8 @@ regex = "1"
 envy = "~0"
 serde = {version = "1",  features = ["derive"] }
 
-gcloud-sdk = { version = "~0", features = ["google-firestore-v1"] }
+# gcloud-sdk = { version = "~0", features = ["google-firestore-v1"] }
+rpc-gcp = { path = "../../../rpc-gcp/", features = ["google-firestore-v1"] }
 
 [build-dependencies]
 tonic-build = "~0"
